@@ -23,24 +23,26 @@ Partial Class DonationDetails
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
@@ -68,8 +70,6 @@ Partial Class DonationDetails
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -94,94 +94,41 @@ Partial Class DonationDetails
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NGO Details"
         '
-        'GroupBox2
+        'RichTextBox1
         '
-        Me.GroupBox2.Controls.Add(Me.RichTextBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(11, 163)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(778, 125)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Doner Details"
+        Me.RichTextBox1.Location = New System.Drawing.Point(526, 53)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(182, 56)
+        Me.RichTextBox1.TabIndex = 9
+        Me.RichTextBox1.Text = ""
         '
-        'GroupBox3
+        'TextBox4
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox18)
-        Me.GroupBox3.Controls.Add(Me.TextBox17)
-        Me.GroupBox3.Controls.Add(Me.TextBox9)
-        Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Controls.Add(Me.TextBox10)
-        Me.GroupBox3.Controls.Add(Me.Label16)
-        Me.GroupBox3.Controls.Add(Me.Label17)
-        Me.GroupBox3.Controls.Add(Me.TextBox7)
-        Me.GroupBox3.Controls.Add(Me.Label12)
-        Me.GroupBox3.Controls.Add(Me.TextBox6)
-        Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.TextBox11)
-        Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Controls.Add(Me.TextBox12)
-        Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Controls.Add(Me.TextBox13)
-        Me.GroupBox3.Controls.Add(Me.Label18)
-        Me.GroupBox3.Controls.Add(Me.TextBox14)
-        Me.GroupBox3.Controls.Add(Me.Label19)
-        Me.GroupBox3.Controls.Add(Me.Label20)
-        Me.GroupBox3.Controls.Add(Me.TextBox15)
-        Me.GroupBox3.Controls.Add(Me.Label21)
-        Me.GroupBox3.Controls.Add(Me.TextBox16)
-        Me.GroupBox3.Controls.Add(Me.Label22)
-        Me.GroupBox3.Controls.Add(Me.Label23)
-        Me.GroupBox3.Controls.Add(Me.Label24)
-        Me.GroupBox3.Controls.Add(Me.Label25)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 323)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(778, 520)
-        Me.GroupBox3.TabIndex = 2
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Donation Details"
+        Me.TextBox4.Location = New System.Drawing.Point(526, 20)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox4.TabIndex = 8
         '
-        'Label1
+        'TextBox3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Name"
+        Me.TextBox3.Location = New System.Drawing.Point(112, 89)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox3.TabIndex = 7
         '
-        'Label2
+        'TextBox2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "No. of people"
+        Me.TextBox2.Location = New System.Drawing.Point(112, 59)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox2.TabIndex = 6
         '
-        'Label3
+        'TextBox1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 89)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Type"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(450, 23)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Contact"
+        Me.TextBox1.Location = New System.Drawing.Point(112, 26)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox1.TabIndex = 5
         '
         'Label5
         '
@@ -192,41 +139,56 @@ Partial Class DonationDetails
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Address"
         '
-        'TextBox1
+        'Label4
         '
-        Me.TextBox1.Location = New System.Drawing.Point(112, 26)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 5
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(450, 23)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(60, 20)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Contact"
         '
-        'TextBox2
+        'Label3
         '
-        Me.TextBox2.Location = New System.Drawing.Point(112, 59)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 6
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 89)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(40, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Type"
         '
-        'TextBox3
+        'Label2
         '
-        Me.TextBox3.Location = New System.Drawing.Point(112, 89)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox3.TabIndex = 7
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(11, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(101, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "No. of people"
         '
-        'TextBox4
+        'Label1
         '
-        Me.TextBox4.Location = New System.Drawing.Point(526, 20)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox4.TabIndex = 8
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(11, 23)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(62, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "NGO_ID"
         '
-        'RichTextBox1
+        'GroupBox2
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(526, 53)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(182, 56)
-        Me.RichTextBox1.TabIndex = 9
-        Me.RichTextBox1.Text = ""
+        Me.GroupBox2.Controls.Add(Me.RichTextBox2)
+        Me.GroupBox2.Controls.Add(Me.TextBox5)
+        Me.GroupBox2.Controls.Add(Me.TextBox8)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Location = New System.Drawing.Point(5, 143)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(778, 145)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Doner Details"
         '
         'RichTextBox2
         '
@@ -273,9 +235,61 @@ Partial Class DonationDetails
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(6, 23)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(49, 20)
+        Me.Label10.Size = New System.Drawing.Size(71, 20)
         Me.Label10.TabIndex = 10
-        Me.Label10.Text = "Name"
+        Me.Label10.Text = "Doner_ID"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.TextBox18)
+        Me.GroupBox3.Controls.Add(Me.TextBox17)
+        Me.GroupBox3.Controls.Add(Me.TextBox9)
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Controls.Add(Me.TextBox10)
+        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Controls.Add(Me.Label17)
+        Me.GroupBox3.Controls.Add(Me.TextBox7)
+        Me.GroupBox3.Controls.Add(Me.Label12)
+        Me.GroupBox3.Controls.Add(Me.TextBox6)
+        Me.GroupBox3.Controls.Add(Me.Label13)
+        Me.GroupBox3.Controls.Add(Me.Label14)
+        Me.GroupBox3.Controls.Add(Me.TextBox11)
+        Me.GroupBox3.Controls.Add(Me.Label9)
+        Me.GroupBox3.Controls.Add(Me.TextBox12)
+        Me.GroupBox3.Controls.Add(Me.Label8)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.TextBox13)
+        Me.GroupBox3.Controls.Add(Me.Label18)
+        Me.GroupBox3.Controls.Add(Me.TextBox14)
+        Me.GroupBox3.Controls.Add(Me.Label19)
+        Me.GroupBox3.Controls.Add(Me.Label20)
+        Me.GroupBox3.Controls.Add(Me.TextBox15)
+        Me.GroupBox3.Controls.Add(Me.Label21)
+        Me.GroupBox3.Controls.Add(Me.TextBox16)
+        Me.GroupBox3.Controls.Add(Me.Label22)
+        Me.GroupBox3.Controls.Add(Me.Label23)
+        Me.GroupBox3.Controls.Add(Me.Label24)
+        Me.GroupBox3.Controls.Add(Me.Label25)
+        Me.GroupBox3.Location = New System.Drawing.Point(17, 314)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(778, 521)
+        Me.GroupBox3.TabIndex = 2
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Donation Details"
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(237, 100)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox18.TabIndex = 36
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Location = New System.Drawing.Point(237, 65)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(125, 27)
+        Me.TextBox17.TabIndex = 58
         '
         'TextBox9
         '
@@ -500,31 +514,17 @@ Partial Class DonationDetails
         Me.Label25.TabIndex = 30
         Me.Label25.Text = "Meal"
         '
-        'TextBox17
-        '
-        Me.TextBox17.Location = New System.Drawing.Point(237, 65)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox17.TabIndex = 58
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(237, 100)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox18.TabIndex = 36
-        '
-        'Form11
+        'DonationDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoScrollMinSize = New System.Drawing.Size(0, 1200)
-        Me.ClientSize = New System.Drawing.Size(800, 481)
+        Me.ClientSize = New System.Drawing.Size(800, 555)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "Form11"
+        Me.Name = "DonationDetails"
         Me.Text = "Form11"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -33,6 +33,8 @@ Partial Class NGOReg
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,7 +49,7 @@ Partial Class NGOReg
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(183, 132)
+        Me.Label2.Location = New System.Drawing.Point(183, 111)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 20)
         Me.Label2.TabIndex = 1
@@ -82,7 +84,7 @@ Partial Class NGOReg
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(324, 129)
+        Me.TextBox1.Location = New System.Drawing.Point(324, 104)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(125, 27)
         Me.TextBox1.TabIndex = 5
@@ -127,11 +129,31 @@ Partial Class NGOReg
         Me.Button1.Text = "Register"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Senior Citizen", "Orphanage"})
+        Me.ComboBox3.Location = New System.Drawing.Point(322, 137)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(127, 28)
+        Me.ComboBox3.TabIndex = 30
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(194, 140)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(40, 20)
+        Me.Label6.TabIndex = 29
+        Me.Label6.Text = "Type"
+        '
         'NGOReg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RichTextBox1)
@@ -161,4 +183,6 @@ Partial Class NGOReg
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

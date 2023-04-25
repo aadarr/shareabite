@@ -45,4 +45,14 @@ Public Class IndividualReg
         MessageBox.Show("You have successfully registered as an individual donor")
         Me.Close()
     End Sub
+
+    Private Sub IndividualReg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim dashboard As New SignUp()
+        SignUp.Show()
+        Me.Close()
+    End Sub
 End Class

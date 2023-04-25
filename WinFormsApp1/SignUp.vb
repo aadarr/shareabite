@@ -72,4 +72,10 @@ Public Class SignUp
         Dim loginform = New Login()
         loginform.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim login As New Login()
+        login.Show()
+        Me.Close()
+    End Sub
 End Class

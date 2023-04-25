@@ -24,21 +24,23 @@ Public Class NGOReg
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim id, name, noofpeeps, contact, address As String
+        Dim id, name, noofpeeps, contact, address, type As String
         id = NGONoCal() + 1
         name = TextBox1.Text
         noofpeeps = TextBox2.Text
         contact = TextBox3.Text
         address = RichTextBox1.Text
+        type = ComboBox3.SelectedItem
         con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AADAR\Desktop\shareabite\WinFormsApp1\WinFormsApp1\shareabite.mdf;Integrated Security=True"
         cmd.Connection = con
-        cmd.CommandText = "insert into Ngos values(@username, @id, @name, @noofpeeps, @contact, @address)"
+        cmd.CommandText = "insert into Ngos values(@username, @id, @name, @noofpeeps, @contact, @address, @type)"
         cmd.Parameters.AddWithValue("@username", Login.uname)
         cmd.Parameters.AddWithValue("@id", id)
         cmd.Parameters.AddWithValue("@name", name)
         cmd.Parameters.AddWithValue("@noofpeeps", noofpeeps)
         cmd.Parameters.AddWithValue("@contact", contact)
         cmd.Parameters.AddWithValue("@address", address)
+        cmd.Parameters.AddWithValue("@type", type)
         Try
             con.Open()
             cmd.ExecuteNonQuery()
@@ -49,4 +51,13 @@ Public Class NGOReg
         Me.Close()
     End Sub
 
+    Private Sub NGOReg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim dashboard As New SignUp()
+        SignUp.Show()
+        Me.Close()
+    End Sub
 End Class

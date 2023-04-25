@@ -52,6 +52,8 @@ Partial Class MakeDonation
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'DateTimePicker1
@@ -76,13 +78,13 @@ Partial Class MakeDonation
         Me.ComboBox1.Items.AddRange(New Object() {"Breakfast", "Lunch", "Dinner"})
         Me.ComboBox1.Location = New System.Drawing.Point(60, 52)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(266, 28)
         Me.ComboBox1.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 17)
+        Me.Label2.Location = New System.Drawing.Point(13, 16)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(41, 20)
         Me.Label2.TabIndex = 3
@@ -295,18 +297,38 @@ Partial Class MakeDonation
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(683, 409)
+        Me.Button1.Location = New System.Drawing.Point(694, 384)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 29
-        Me.Button1.Text = "Submit"
+        Me.Button1.Text = "Donate"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Form10
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(359, 17)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(41, 20)
+        Me.Label18.TabIndex = 30
+        Me.Label18.Text = "NGO"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(406, 19)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(89, 20)
+        Me.Label19.TabIndex = 31
+        Me.Label19.Text = "1234567890"
+        '
+        'MakeDonation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label15)
@@ -337,7 +359,7 @@ Partial Class MakeDonation
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Name = "Form10"
+        Me.Name = "MakeDonation"
         Me.Text = "Form10"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -374,4 +396,6 @@ Partial Class MakeDonation
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
 End Class

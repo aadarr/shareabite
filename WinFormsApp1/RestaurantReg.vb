@@ -45,4 +45,14 @@ Public Class RestaurantReg
         MessageBox.Show("You have successfully registered a restaurant")
         Me.Close()
     End Sub
+
+    Private Sub RestaurantReg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim dashboard As New SignUp()
+        SignUp.Show()
+        Me.Close()
+    End Sub
 End Class

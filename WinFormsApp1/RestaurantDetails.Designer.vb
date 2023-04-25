@@ -123,7 +123,7 @@ Partial Class RestaurantDetails
         Me.Button1.Text = "Edit Details"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Form7
+        'RestaurantDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -138,7 +138,7 @@ Partial Class RestaurantDetails
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form7"
+        Me.Name = "RestaurantDetails"
         Me.Text = "Form7"
         Me.ResumeLayout(False)
         Me.PerformLayout()
