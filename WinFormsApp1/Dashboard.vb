@@ -21,4 +21,10 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub ViewDonationsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewDonationsToolStripMenuItem.Click
+        Dim view As New Form1()
+        view.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -22,7 +22,7 @@ Public Class DonationDetails
             dr2 = xComm1.ExecuteReader
             If dr2.HasRows Then
                 dr2.Read()
-                accid = dr2("id")
+
             End If
             dr2.Close()
         ElseIf login.acctype = "Individual Donor" Then
@@ -36,7 +36,7 @@ Public Class DonationDetails
             dr2 = xComm1.ExecuteReader
             If dr2.HasRows Then
                 dr2.Read()
-                accid = dr2("id")
+
             End If
             dr2.Close()
         ElseIf login.acctype = "NGO" Then
