@@ -36,9 +36,10 @@ Partial Class SignUp
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(343, 115)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(324, 101)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 20)
+        Me.Label1.Size = New System.Drawing.Size(102, 35)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Sign Up"
         '
@@ -114,6 +115,7 @@ Partial Class SignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkSeaGreen
         Me.ClientSize = New System.Drawing.Size(816, 457)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -125,7 +127,7 @@ Partial Class SignUp
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "SignUp"
-        Me.Text = "Form1"
+        Me.Text = "SignUp"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

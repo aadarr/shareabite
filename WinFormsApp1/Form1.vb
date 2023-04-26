@@ -13,6 +13,7 @@ Public Class Form1
 
         i = 0
         If Login.acctype = "Restaurant" Then
+            DataGridView1.Rows.Clear()
             con = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AADAR\Desktop\shareabite\WinFormsApp1\WinFormsApp1\shareabite.mdf;Integrated Security=True")
             con.Open()
             cmd1.Connection = con
@@ -22,7 +23,7 @@ Public Class Form1
             Do While dr1.Read()
                 Dim rowIndex As Integer = DataGridView1.Rows.Add()
                 DataGridView1.Rows(rowIndex).Cells("Column1").Value = dr1("date")
-                DataGridView1.Rows(rowIndex).Cells("Column2").Value = dr1("did")
+                DataGridView1.Rows(rowIndex).Cells("Column2").Value = Login.accid
                 DataGridView1.Rows(rowIndex).Cells("Column4").Value = dr1("meal")
             Loop
             dr1.Close()
@@ -43,6 +44,7 @@ Public Class Form1
             dr2.Close()
             con.Close()
         ElseIf Login.acctype = "Individual Donor" Then
+            DataGridView1.Rows.Clear()
             con = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AADAR\Desktop\shareabite\WinFormsApp1\WinFormsApp1\shareabite.mdf;Integrated Security=True")
             con.Open()
             cmd1.Connection = con
@@ -52,7 +54,7 @@ Public Class Form1
             Do While dr1.Read()
                 Dim rowIndex As Integer = DataGridView1.Rows.Add()
                 DataGridView1.Rows(rowIndex).Cells("Column1").Value = dr1("date")
-                DataGridView1.Rows(rowIndex).Cells("Column2").Value = dr1("did")
+                DataGridView1.Rows(rowIndex).Cells("Column2").Value = Login.accid
                 DataGridView1.Rows(rowIndex).Cells("Column4").Value = dr1("meal")
             Loop
             dr1.Close()
@@ -74,6 +76,7 @@ Public Class Form1
             con.Close()
 
         ElseIf Login.acctype = "NGO" Then
+            DataGridView1.Rows.Clear()
             con = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AADAR\Desktop\shareabite\WinFormsApp1\WinFormsApp1\shareabite.mdf;Integrated Security=True")
             con.Open()
             cmd1.Connection = con
@@ -83,7 +86,7 @@ Public Class Form1
             Do While dr1.Read()
                 Dim rowIndex As Integer = DataGridView1.Rows.Add()
                 DataGridView1.Rows(rowIndex).Cells("Column1").Value = dr1("date")
-                DataGridView1.Rows(rowIndex).Cells("Column2").Value = dr1("nid")
+                DataGridView1.Rows(rowIndex).Cells("Column2").Value = Login.accid
                 DataGridView1.Rows(rowIndex).Cells("Column4").Value = dr1("meal")
             Loop
             dr1.Close()

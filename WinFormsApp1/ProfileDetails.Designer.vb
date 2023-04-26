@@ -69,7 +69,7 @@ Partial Class ProfileDetails
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(379, 110)
+        Me.Label1.Location = New System.Drawing.Point(363, 111)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 20)
         Me.Label1.TabIndex = 29
